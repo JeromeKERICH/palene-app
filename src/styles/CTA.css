@@ -1,0 +1,112 @@
+.cta {
+  background: linear-gradient(135deg, #f8f8f8, #3c763d);
+  color: #333;
+  padding: 6rem 2rem;
+  text-align: center;
+  border-radius: 10px; 
+  
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cta-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.cta-description {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cta-button {
+  padding: 1.2rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;  
+  transition: all 0.3s ease;
+}
+
+.cta-button-primary {
+  background-color: #28a745;  
+  color: white;
+  border: none;
+}
+
+.cta-button-primary:hover {
+  background-color: #004d40;  
+  transform: translateY(-3px); 
+}
+
+.cta-button-secondary {
+  background-color: transparent;
+  color: #28a745;
+  border: 2px solid #28a745;
+}
+
+.cta-button-secondary:hover {
+  background-color: #28a745;
+  color: #333;
+  transform: translateY(-3px); 
+}
+
+.cta-icon {
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  .cta {
+    padding: 3rem 0.5rem;
+  }
+  .cta-title {
+      font-size: 2.5rem;
+      text-align: start;
+  }
+
+  .cta-description {
+      font-size: 1rem;
+  }
+
+  .cta-buttons {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  .cta-button {
+      width: 100%;
+      padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+      font-size: 1.8rem;
+  }
+
+  .cta-description {
+      font-size: 1rem;
+  }
+
+  .cta-icon {
+      font-size: 2.5rem;
+  }
+}

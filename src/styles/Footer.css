@@ -1,0 +1,132 @@
+/* General Footer Styling */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #333;
+  color: #333;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Logo Section */
+.footer-logo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00796b;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Footer Links Section */
+.footer-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #00796b;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00796b;
+}
+
+/* Footer Contact Section */
+.footer-contact h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #00796b;
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Footer Social Section */
+.footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #00796b;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icons a {
+  display: flex;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00796b;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 10px;
+  }
+
+  .footer-logo-section {
+    grid-column: span 1;
+  }
+
+  .footer-logo  {
+    font-size: 1.5rem;
+  }
+
+  .footer-contact {
+    grid-column: span 1;
+  }
+
+  .footer-links {
+    grid-column: span 1;
+  }
+
+  .footer-social {
+    grid-column: span 1;
+  }
+}
