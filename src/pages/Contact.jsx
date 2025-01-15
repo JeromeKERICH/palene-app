@@ -13,7 +13,7 @@ const ContactPage = () => {
           <div className="contact-details">
             <h2>Contact Information</h2>
             <p><FaMapMarkerAlt /> Malindi, Kenya</p>
-            <p><FaPhoneAlt /> (+254) 717 616  616 </p>
+            <p><FaPhoneAlt /> (+254) 717 717  616 </p>
             <p><FaEnvelope /> info@palenehealth.com</p>
             <p><FaWhatsapp /> <a href="#">Chat with us on WhatsApp</a></p>
           </div>
