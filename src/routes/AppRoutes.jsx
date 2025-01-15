@@ -5,7 +5,7 @@ import About from '../pages/About';
 import Appointments from '../pages/Appointments';
 import Contact from '../pages/Contact';
 import Blog from '../pages/Blog';
-import PrivacyPolicy from '../pages/privacy';
+import PrivacyPolicy from "../pages/privacy";
 import TermsAndConditions from '../pages/Terms';
 
 const AppRouter = () => {
