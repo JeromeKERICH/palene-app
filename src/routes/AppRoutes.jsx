@@ -7,6 +7,7 @@ import Contact from '../pages/Contact';
 import Blog from '../pages/Blog';
 
 import TermsAndConditions from '../pages/Terms';
+import PrivacyPolicy from '../pages/privacy';
 
 
 const AppRouter = () => {
@@ -18,6 +19,7 @@ const AppRouter = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="Terms" element={<TermsAndConditions/>}/>
+      <Route path="privatepolicy" element={<PrivacyPolicy/>}/>
       
     </Routes>
   );
