@@ -22,7 +22,7 @@ const services = [
   
  
   {
-    title: 'Emergency Medical Services',
+    title: 'Emergency Services',
     icon: <FaMedkit />,
     description: 'Immediate medical care for emergency situations, providing fast response and on-site treatment.',
   },
@@ -49,7 +49,6 @@ const Services = () => {
               <div className="service-icon">{service.icon}</div>
               <h3 className="service-title">{service.title}</h3>
               <p className="service-description">{service.description}</p>
-              <button className="service-button">Learn More</button>
             </div>
           ))}
         </div>

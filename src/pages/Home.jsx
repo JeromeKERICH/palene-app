@@ -1,6 +1,8 @@
-import ContactSection from "../components/Contact";
+
+import VirtualConsultation from "../components/Book";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
+import HealthPrograms from "../components/Health";
 
 import HeroSection from "../components/Hero";
 import NewsletterSection from "../components/Newsletter";
@@ -9,6 +11,7 @@ import NewsletterSection from "../components/Newsletter";
 
 import WhyPalene from "../components/Reason";
 import Services from "../components/Services";
+import SuccessStories from "../components/Testimonial";
 
 
 
@@ -23,8 +26,10 @@ const Home = () => {
       <WhyPalene/>
       <CTA/>
       <Services/>
+      <VirtualConsultation/>
+      <HealthPrograms/>
+      <SuccessStories/>
       <FAQ/>
-      <ContactSection/>
       <NewsletterSection/>
     </div>
   );

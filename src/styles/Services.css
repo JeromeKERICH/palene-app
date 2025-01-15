@@ -15,7 +15,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color:  #0c7d8f;
+    color:  #3A8B59;
   }
   
   .services-grid {
@@ -28,8 +28,8 @@
   .service-card {
     background-color: #fff;
     color: #555;
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 1.5rem;
+    border-top-right-radius: 40%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 350px;
@@ -42,21 +42,24 @@
   }
   
   .service-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #333;
+    font-size: 2rem;
+    text-align: start;
+    margin-bottom: 10px;
+    color: #3A8B59;
   }
   
   .service-title {
     font-size: 1.5rem;
-    font-weight: 550;
-    margin-bottom: 1rem;
-    color: #009688;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 10px;
+    color: #63C7FF;
   }
   
   .service-description {
     font-size: 1.1rem;
     color: #555;
+    text-align: start;
     margin-bottom: 10px;
   }
 
@@ -64,11 +67,10 @@
 .service-button {
   padding: 10px 20px;
   font-size: 0.8rem;
-  background-color: whitesmoke;
-  color: #333;
+  background-color: #3A8B59;
+  color: #f8f8f8;
   border: none;
-  border-radius: 30px;
-  border: 1px solid #333;
+  border-radius: 0;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-weight: 400;

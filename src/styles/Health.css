@@ -1,0 +1,115 @@
+.health-programs {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .health-programs h1 {
+    font-size: 2.5rem;
+    color: #3a8b59;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .health-programs p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .program-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .program-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .program-card h3 {
+    font-size: 1.5rem;
+    color: #63C7FF;
+    margin: 1rem 0;
+  }
+  
+  .program-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .program-card button {
+    background-color: #3a8b59;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  
+  
+  .cta {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .cta button {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .cta button:hover {
+    background-color: #3a8b59;
+  }
+  
+  @media (max-width: 768px) {
+    .health-programs {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+    .program-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .health-programs h1 {
+        font-size: 1.5rem;
+    }
+
+    .program-card p {
+        text-align: start;
+    }
+  }
+  

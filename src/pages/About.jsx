@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FaLinkedin, FaTwitter, FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
 import CTA from "../components/CTA";
 import "../styles/About.css";
@@ -45,6 +46,23 @@ const About = () => {
       ],
     },
   ];
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const accreditations = [
+    "ISO 9001 Certified",
+    "Healthcare Excellence Award 2023",
+    "Top Rated Clinic by HealthGov",
+  ];
+
+  const partners = [
+    "World Health Organization",
+    "Red Cross",
+    "Global Health Initiative",
+  ];
+
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
 
   return (
     <>
@@ -138,6 +156,61 @@ const About = () => {
         </div>
       </section>
 
+      <section className="accreditations">
+        <h2>Our Accreditations & Trusted Partners</h2>
+        <p>We’re proud to be recognized for excellence and to collaborate with industry leaders.</p>
+        <div className="accreditation-container">
+          <div className="accreditation-list">
+            <h3>Accreditations</h3>
+            <ul className="content-list">
+              {accreditations.map((item, index) => (
+                <li key={index} className="content-item">{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="partners-list">
+            <h3>Our Partners</h3>
+            <ul className="content-list">
+              {partners.map((item, index) => (
+                <li key={index} className="content-item">{item}</li>
+              ))}
+            </ul>
+            <button className="partnership-btn" onClick={handleOpenModal}>
+              Become a Partner
+            </button>
+          </div>
+        </div>
+
+
+        {isModalOpen && (
+          <div className="modal">
+            <div className="modal-content">
+              
+              <h3>Partnership Form</h3>
+              <form>
+                <label>
+                  Name:
+                  <input type="text" placeholder="Your Name" required />
+                </label>
+                <label>
+                  Email:
+                  <input type="email" placeholder="Your Email" required />
+                </label>
+                <label>
+                  Organization:
+                  <input type="text" placeholder="Your Organization" required />
+                </label>
+                <label>
+                  Message:
+                  <textarea placeholder="How can we collaborate?" required></textarea>
+                </label>
+                <button type="submit">Submit</button>
+                <button type="close" className="close-tbn" onClick={handleCloseModal}>Close</button>
+              </form>
+            </div>
+          </div>
+        )}
+      </section>
       <section className="team-section">
         <div className="container">
           <h2>Behind the Curtains</h2>

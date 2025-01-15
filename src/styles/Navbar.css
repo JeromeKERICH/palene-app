@@ -22,9 +22,11 @@
   flex-shrink: 0;
 }
 
-.logo-img {
-  width: 120px;
-  height: auto;
+.logo h4 {
+  width: 150px;
+  font-size: 1.2rem;
+  color: #3A8B59;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Navigation Links */

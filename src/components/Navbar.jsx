@@ -14,7 +14,7 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="logo">
             <a href="/">
-              <img src="/logo.png" alt="Palene Health" className="logo-img" />
+              <h4>Palene Health</h4>
             </a>
           </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/services" className="nav-link">
+              <a href="/servicepage" className="nav-link">
                 <FaStethoscope className="nav-icon" /> Services
               </a>
             </li>
@@ -63,7 +63,7 @@ const Navbar = () => {
         {/* Footer Links */}
         <div className="navbar-footer">
           <a href="/terms" className="footer-link">Terms & Conditions</a>
-          <a href="/privacy" className="footer-link">Privacy Policy</a>
+          <a href="/privacypolicy" className="footer-link">Privacy Policy</a>
         </div>
       </nav>
 

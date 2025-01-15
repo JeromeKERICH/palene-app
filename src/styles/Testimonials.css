@@ -1,0 +1,111 @@
+/* General Styles */
+.success-stories {
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: #f9f9f9;
+    color: #333333;
+    text-align: center;
+  }
+  
+  .success-stories h2 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #2c6e49;
+    margin-bottom: 1rem;
+  }
+  
+  .success-stories p {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  /* Stories Container */
+  .stories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  /* Story Card */
+  .story-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    max-width: 350px;
+  }
+  
+  .story-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Story Image */
+  .story-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 5px solid #2c6e49;
+  }
+  
+  /* Story Content */
+  .story-card h3 {
+    font-size: 1.2rem;
+    color: #63C7FF;
+    margin: 1rem 1rem 0.5rem;
+  }
+  
+  .story-card p {
+    font-size: 1rem;
+    color: #666666;
+    margin: 0.5rem 1rem;
+    line-height: 1.5;
+  }
+  
+  .story-card blockquote {
+    font-style: italic;
+    color: #ff6f61;
+    font-size: 1rem;
+    margin: 1rem 1.5rem;
+    padding-left: 1rem;
+    border-left: 4px solid #ff6f61;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+
+    .success-stories {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .success-stories h2 {
+      font-size: 1.5rem;
+    }
+  
+    .success-stories p {
+      font-size: 1rem;
+      text-align: start;
+    }
+  
+    .story-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .story-card p {
+      font-size: 0.9rem;
+    }
+  
+    .story-card blockquote {
+      font-size: 0.9rem;
+    }
+  }
+  
